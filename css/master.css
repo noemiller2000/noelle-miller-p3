@@ -1,0 +1,181 @@
+/* General CSS Rules */
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #160029;
+  color: white;
+  min-height: 800px;
+}
+
+header {
+  font-family: "Acme", sans-serif;
+  background-color: #654085;
+}
+
+h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0px;
+  display: block;
+}
+
+button {
+  height: 25px;
+  width: 100px;
+  margin-left: 5px;
+  z-index: 5;
+}
+
+input {
+  padding-left: 3px;
+  width: 300px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.centeredContent {
+  display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.textAlignRight {
+  text-align: right;
+}
+
+.questionDiv {
+  padding-top: 20px;
+}
+
+/* Dropdown List CSS Rules */
+.dropbtn {
+  background-color: #654085;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  padding: 16px;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 150px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  background-color: #C5BFCA;
+  display: none;
+  position: absolute;
+  width: calc(150px + 16px * 2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdownContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownContent a:hover {
+  background-color: #A89FAF;
+}
+
+.dropdownContent a.active {
+  background-color: #B60087;
+  color: white;
+}
+
+.dropdown:hover .dropdownContent {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #583874;}
+
+/* Previous Questions Table CSS Rules */
+table.prevQuestionsTable td, table.prevQuestionsTable th {
+  background-color: #654085;
+  border: 2px solid #160029;
+  padding: 10px;
+  text-align: center;
+  width: calc(75vw/2);
+}
+
+table.prevQuestionsTable td.altColor, table.prevQuestionsTable th.altColor {
+  background-color: #7E6099;
+}
+
+table.prevQuestionsTable td {
+  text-align: left;
+}
+
+/* Page Button CSS Rules */
+.pageButtonDiv {
+  width: 80vw;
+}
+
+.pageButton {
+  color: #C5BFCA;
+  font-size: 2em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.pageButton:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.pageButton:active {
+  color: #A89FAF;
+}
+
+#prevPageButton {
+  transform: rotateY(180deg);
+}
+
+/* Magic 8 Ball CSS Rules */
+.draggable {
+  position: absolute;
+  display: block;
+  cursor: move;
+  z-index: 10;
+}
+
+.stationary {
+  position: sticky;
+}
+
+.initialPosition {
+  /* Subtracting half of ball width and half of scroll wheel width */
+  left: calc(50vw - 125px - 8.5px);
+}
+
+#magicBall {
+  width: 250px;
+  height: 250px;
+}
+
+#magicBallSpace {
+  width: 250px;
+  height: 250px;
+}
+
+#magicBallSpace.hidden {
+  visibility: hidden;
+  height: 0px;
+}

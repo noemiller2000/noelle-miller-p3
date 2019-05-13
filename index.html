@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project 3</title>
+    <!-- Importing fonts: Acme -->
+    <link href="https://fonts.googleapis.com/css?family=Acme|Ubuntu" rel="stylesheet">
+    <!-- Linking CSS file -->
+    <link href="css/master.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body id="body">
+    <header>
+      <h1 class="centeredContent">Ask the Magic 8-Ball!</h1>
+    </header>
+    <main>
+      <div class="dropdown">
+        <div class="dropbtn">Types of Responses</div>
+        <div class="dropdownContent"></div>
+      </div>
+      <div class="centeredContent questionDiv">
+        <input type="text" id="questionInput" placeholder="Enter your burning (yes or no) question" value="">
+        <button type="button" id="askButton">Ask</button>
+      </div>
+      <br>
+      <img class="stationary initialPosition" id="magicBall" src="images/magic-8-ball.png" alt="A mystical Magic 8 Ball!">
+      <div class="centeredContent"><span class="hidden" id="magicBallSpace"></span></div>
+      <h3 class="centeredContent" id="magicBallAnswer"> </h3>
+      <table class="centeredContent hidden prevQuestionsTable">
+        <tr>
+          <th>Previous Questions</th>
+          <th>Answers</th>
+        </tr>
+      </table>
+      <section class="centeredContent">
+        <div class="pageButtonDiv hidden">
+          <p class="pageButton floatLeft" id="prevPageButton">➜</p>
+          <p class="pageButton floatRight textAlignRight" id="nextPageButton">➜</p>
+        </div>
+      </section>
+      <section class="centeredContent">
+        <div class="hidden" id="pageNumDisplay">Page <span id="pageNumber">1</span> of <span id="pageTotal">1</span></div>
+      </section>
+    </main>
+    <!-- Linking jQuery and Javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+  </body>
+</html>
